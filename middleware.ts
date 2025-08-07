@@ -16,7 +16,7 @@ export function middleware(request: NextRequest) {
   
   // Redirect root path to dashboard overview
   if (pathname === '/') {
-    return NextResponse.redirect(new URL('/dashboard', request.url));
+    return NextResponse.redirect(new URL('/login', request.url));
   }
   
   // You can add more redirect rules here if needed
